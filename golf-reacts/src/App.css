@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+/* Navbar */
+.navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.8s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.navbar-nav .nav-link:hover {
+  color: green; /* Bootstrap primary color for demonstration, adjust as needed */
+}
+
+.nav-link {
+  position: relative; /* Needed to properly position the pseudo-element */
+  display: inline-block; /* Ensures the link behaves as a block for positioning */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust based on your navbar's design */
+  left: 50%; /* Start from the middle */
+  transform: translateX(-50%) scaleX(0); /* Center the element and set its initial scale */
+  width: 100%; /* Full width */
+  height: 2px;
+  background: grey; /* Red underline */
+  transition: transform 0.8s ease-in-out; /* Smooth transition for the transform */
+  display: block;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(90%); /* Scale to full size on hover */
+}
+
