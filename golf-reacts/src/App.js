@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Homepage from "./pages/homepage"
+import Homepage from "./pages/homepage";
 import MyNavbar from './navbar';
 import Articles from './pages/articles';
 import Tournaments from './pages/tournaments';
@@ -16,7 +16,8 @@ function App() {
         <MyNavbar/>
       </header>
     <Routes>
-      <Route path="/" element={<Homepage/>}/>
+    <Route path="/" element={<Homepage/>}/>
+      <Route path="/pages/homepage.js" element={<Homepage/>}/>
       <Route path="/pages/articles.js" element={<Articles/>}/>
       <Route path="/pages/tournaments.js" element={<Tournaments/>}/>
       <Route path="/pages/schedule.js" element={<Schedule/>}/>
@@ -24,6 +25,7 @@ function App() {
     </Routes>
     </div>
     </Router>
+      
   );
 }
 

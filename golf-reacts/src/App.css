@@ -51,6 +51,69 @@ body {
   margin-top: 80px; /* Pushes content down below navbar */
   padding: 20px;
 }
+/*Homepage*/
+.homepage-container {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-banner {
+  background: #004225;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+.tournament-card, .article-card {
+  background: #f4f4f4;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.btn:hover{
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+
+.btn {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.upcoming-tournaments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.upcoming-tournaments li {
+  padding: 5px 0;
+}
 
 /* Articles Page */
 .articles-container {
@@ -62,35 +125,6 @@ body {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 80px auto 20px;
-}
-
-.schedule-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.schedule-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.schedule-item {
-  background: #f9f9f9;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.schedule-item h2 {
-  margin: 5px 0;
-  font-size: 1.5em;
-}
-
-.schedule-item p {
-  font-size: 1.1em;
 }
 
 
@@ -128,15 +162,10 @@ body {
 .schedule-container {
   padding: 20px;
   max-width: 800px;
-  margin: auto;
-}
-
-.schedule-container {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+  margin: 40px auto;
   text-align: center;
 }
+
 
 .standings-table {
   width: 100%;
@@ -155,6 +184,21 @@ body {
   font-weight: bold;
 }
 
+.toggle-btn {
+  background-color: #004225;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin: 20px 0;
+}
+
+.toggle-btn:hover {
+  background-color: #008f58;
+}
 
 /* Footer */
 .footer {

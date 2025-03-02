@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import '../App.css'; // Keep styling consistent
 
 const Tournaments = () => {
+  /*return(
+    <div className="main-content">
+      <h1>
+        Tournaments page
+      </h1>
+    </div>
+  );*/
   const [currentTournament, setCurrentTournament] = useState(null);
   const [leaderboard, setLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -127,7 +135,7 @@ const Tournaments = () => {
       )}
     </div>
   );
-};
+}
 
 export default Tournaments;
 
