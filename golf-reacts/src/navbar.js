@@ -19,7 +19,8 @@ function MyNavbar() {
             <Nav>
               <Nav.Link as={Link} className='mx-2' to="/pages/articles.js" activeclassName="nav-link" activeClassName="active">Articles</Nav.Link>
               <Nav.Link as={Link} className='mx-2' to="/pages/tournaments.js" activeclassName="nav-link" activeClassName="active">Tournaments</Nav.Link>
-              <Nav.Link as={Link} className='mx-2' to="/players" activeclassName="nav-link" activeClassName="active">players</Nav.Link>
+              <Nav.Link as={Link} className='mx-2' to="/pages/schedule.js" activeclassName="nav-link" activeClassName="active">Schedule</Nav.Link>
+              <Nav.Link as={Link} className='mx-2' to="/pages/players.js" activeclassName="nav-link" activeClassName="active">Players</Nav.Link>
               {/* Add more navigation links here */}
             </Nav>
           </Navbar.Collapse>

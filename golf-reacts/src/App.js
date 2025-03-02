@@ -5,6 +5,8 @@ import MyNavbar from './navbar';
 import Articles from './pages/articles';
 import Tournaments from './pages/tournaments';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Schedule from './pages/schedule';
+import Players from './pages/players';
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
         <MyNavbar/>
       </header>
     <Routes>
-      <Route path="/pages/homepage.js" element={<Homepage/>}/>
+      <Route path="/" element={<Homepage/>}/>
       <Route path="/pages/articles.js" element={<Articles/>}/>
       <Route path="/pages/tournaments.js" element={<Tournaments/>}/>
+      <Route path="/pages/schedule.js" element={<Schedule/>}/>
+      <Route path="/pages/players.js" element={<Players/>}/>
     </Routes>
     </div>
     </Router>
